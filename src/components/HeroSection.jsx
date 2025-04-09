@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Navbar Section */}
       <nav className="navbar">
         <div className="nav-links">
-          <a href="#home">Home</a>
+          <a href="#home">Homes</a>
           <a href="#about">About</a>
           <a href="#project">Project</a>
           <a href="#contact">Contact</a>
