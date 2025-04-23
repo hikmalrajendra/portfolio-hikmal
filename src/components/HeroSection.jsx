@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../styles/App.css";
 import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import jsLogo from '../assets/javascript.png';
@@ -28,17 +28,15 @@ const HeroSection = () => {
 
   return (
     <div className="main-container">
-      {/* Navbar Section */}
       <nav className="navbar">
         <div className="nav-links">
-          <a href="#home">Homes</a>
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#project">Project</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-content">
           <h2>Hello, I'am</h2>
@@ -52,9 +50,9 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="social-item"
             >
-            <div className="icon-box">
-              <img src={instagramIcon} alt="Instagram" />
-            </div>
+              <div className="icon-box">
+                <img src={instagramIcon} alt="Instagram" />
+              </div>
               <span className="social-text">hikmairjndra</span>
             </a>
             <a
@@ -63,10 +61,10 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="social-item"
             >
-                <div className="icon-box">
-                  <img src={githubIcon} alt="GitHub" href="https://github.com/hikmalrajendra" />
-                </div>
-                <span className="social-text">hikmalrajendra</span>
+              <div className="icon-box">
+                <img src={githubIcon} alt="GitHub" />
+              </div>
+              <span className="social-text">hikmalrajendra</span>
             </a>
             <a
               href="https://www.linkedin.com/in/hikmalrajendra"
@@ -74,17 +72,16 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="social-item"
             >
-                <div className="icon-box">
-                  <img src={linkedinIcon} alt="LinkedIn"  href="https://www.linkedin.com/in/hikmal-rajendra-zulfa-646513289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" />
-                </div>
-                <span className="social-text">hikmalrajendra</span>
+              <div className="icon-box">
+                <img src={linkedinIcon} alt="LinkedIn" />
+              </div>
+              <span className="social-text">hikmalrajendra</span>
             </a>
           </div>
           <button className="explore-btn">Let’s Explore Now</button>
         </div>
       </section>
 
-      {/* Skills Marquee */}
       <div className="skills-section">
         <h3>Skill of Programming :</h3>
         <div className="marquee-container">

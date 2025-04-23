@@ -1,12 +1,17 @@
 import React from 'react';
 import HeroSection from './components/HeroSection';
-import './App.css';
+import './styles/App.css';
+import './styles/AboutSection.css';
+import AboutSection from './components/AboutSection';
+import ProjectSection from './components/ProjectSection';
+
 
 function App() {
   return (
     <div className="App">
       <HeroSection />
-      {/* Tambahkan bagian Project dan Contact sesuai kebutuhan */}
+      <AboutSection />
+      <ProjectSection />
     </div>
   );
 }

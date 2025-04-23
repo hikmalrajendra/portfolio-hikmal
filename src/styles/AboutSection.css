@@ -1,0 +1,89 @@
+.about-section {
+    position: relative;
+    background: #050317;
+    padding: 6rem 2rem 15rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10rem;
+  }
+  
+  .about-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .glass-bar {
+    position: absolute;
+    top: 50%;
+    width: 120%;
+    max-width: none;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .bar-left {
+    left: -10%;
+    transform: translateY(-50%) rotate(-20deg);
+    z-index: 1;
+  }
+  
+  .bar-right {
+    right: -10%;
+    transform: translateY(-50%) rotate(20deg);
+    z-index: 1;
+  }
+  
+  .bar-marquee {
+    display: inline-flex;
+    gap: 2rem;
+    white-space: nowrap;
+    width: max-content;       
+    will-change: transform;    
+    animation: bar-scroll 15s linear infinite;
+  }
+  
+  @keyframes bar-scroll {
+    0%   { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-44.4444%, 0, 0); }
+  }
+  
+  .bar-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .profile-glass {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
